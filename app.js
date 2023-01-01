@@ -13,8 +13,10 @@ translateButton.addEventListener('click',translateToBanana);
 //https://api.funtranslations.com/translate/minion.json
 //https://api.funtranslations.com/translate/yoda.json
 
+var serverUrl = "https://api.funtranslations.com/translate/minion.json"
+
 function createUrlParameter(inputTextValue){
-    return "https://api.funtranslations.com/translate/yoda.json?text="+inputTextValue ;
+    return serverUrl+"?"+"text="+inputTextValue ;
 
 }
 
@@ -27,6 +29,9 @@ function translateToBanana(){
     .then(json => {
         outputText.innerHTML = json.contents.translated;
         console.log(json.contents.translated)
+    })
+    .catch(()=> {
+        outputText.innerHTML="too many request try after sometime !!!!!!!!!!!";
     });
 
 }
