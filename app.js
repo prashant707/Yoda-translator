@@ -13,7 +13,7 @@ translateButton.addEventListener('click',translateToBanana);
 //https://api.funtranslations.com/translate/minion.json
 //https://api.funtranslations.com/translate/yoda.json
 
-var serverUrl = "https://api.funtranslations.com/translate/minion.json"
+var serverUrl = "https://api.funtranslations.com/translate/yoda.json";
 
 function createUrlParameter(inputTextValue){
     return serverUrl+"?"+"text="+inputTextValue ;
