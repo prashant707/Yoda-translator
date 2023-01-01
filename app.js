@@ -27,11 +27,11 @@ function translateToBanana(){
     fetch(url)
     .then(response => response.json())
     .then(json => {
-        outputText.innerHTML = json.contents.translated;
+        outputText.innerText = json.contents.translated;
         console.log(json.contents.translated)
     })
     .catch(()=> {
-        outputText.innerHTML="too many request try after sometime !!!!!!!!!!!";
+        outputText.innerText ="too many request try after sometime !!!!!!!!!!!";
     });
 
 }
