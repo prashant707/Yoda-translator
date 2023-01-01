@@ -6,7 +6,6 @@ you can use this app to interact with yoda,
 you just need to write a text in english language and
 it will give you the text in yoda language.
 
-It is CLI based application developed using vanilla javascript.
 
 ## Tech stack
 
